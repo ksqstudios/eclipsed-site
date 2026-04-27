@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#3A5878">
+
+  <title>Eclipsed — You feel it before the numbers do</title>
+  <meta name="description" content="Eclipsed shows you the sleep debt you've quietly accumulated. Reads HealthKit, computes a rolling total, surfaces it through a five-stage gradient. On-device, no accounts, no cloud sync.">
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eclipsedsleep.com/">
+  <meta property="og:title" content="Eclipsed — You feel it before the numbers do">
+  <meta property="og:description" content="Sleep debt, made visible. Reads HealthKit, computes a rolling total, surfaces it through a five-stage gradient.">
+  <meta property="og:image" content="https://eclipsedsleep.com/og.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Eclipsed — You feel it before the numbers do">
+  <meta name="twitter:description" content="Sleep debt, made visible.">
+  <meta name="twitter:image" content="https://eclipsedsleep.com/og.png">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="canonical" href="https://eclipsedsleep.com/">
+
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- Plausible analytics — privacy-friendly, no cookies -->
+  <script defer data-domain="eclipsedsleep.com" src="https://plausible.io/js/script.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Eclipsed",
+    "operatingSystem": "iOS",
+    "applicationCategory": "HealthApplication",
+    "description": "Sleep debt utility for iOS. Reads HealthKit, computes a rolling debt total, surfaces it through a five-stage gradient.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "ksq studios",
+      "url": "https://eclipsedsleep.com"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- HERO                                                          -->
+<!-- ============================================================ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="chips" aria-hidden="true">
+      <span class="chip chip-slate"></span>
+      <span class="chip chip-mist"></span>
+      <span class="chip chip-plum"></span>
+      <span class="chip chip-rust"></span>
+      <span class="chip chip-crimson"></span>
+    </div>
+
+    <h1>You feel it<br>before the numbers do.</h1>
+
+    <p class="lede">
+      Sleep debt is real, and it's quietly accumulating. Eclipsed reads your sleep
+      from HealthKit, computes a rolling total, and shows you exactly how much
+      you're carrying — through a gradient that warms with the weight.
+    </p>
+
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#" aria-disabled="true">Coming soon to the App Store</a>
+    </div>
+
+    <p class="meta">iPhone · iOS 18+ · One-time purchase · No subscription</p>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- HOW IT WORKS                                                  -->
+<!-- ============================================================ -->
+<section class="how">
+  <div class="section-inner">
+    <h2>How it works</h2>
+
+    <ol class="steps">
+      <li>
+        <span class="step-num">1</span>
+        <h3>Connect HealthKit</h3>
+        <p>Eclipsed reads sleep records from the Health app. Your watch already knows; we just ask politely.</p>
+      </li>
+      <li>
+        <span class="step-num">2</span>
+        <h3>We compute the debt</h3>
+        <p>Each night, target minus actual. Surplus capped so a Saturday lie-in can't erase a week of short nights.</p>
+      </li>
+      <li>
+        <span class="step-num">3</span>
+        <h3>The color tells the story</h3>
+        <p>Slate when you're rested. Crimson when you've been carrying it for weeks. Five stages, one glance.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- ALSO                                                          -->
+<!-- ============================================================ -->
+<section class="also">
+  <div class="section-inner">
+    <h2>Also</h2>
+
+    <div class="also-grid">
+      <figure>
+        <div class="screenshot screenshot-tonight" aria-hidden="true"></div>
+        <figcaption>
+          <h3>A 14-day strip</h3>
+          <p>Below tonight's headline, the past two weeks at a glance — one chip per night, dimmed for nights without data.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <div class="screenshot screenshot-history" aria-hidden="true"></div>
+        <figcaption>
+          <h3>The receipts</h3>
+          <p>Thirty days of detail. How long you slept, what you owed, where the data came from.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <div class="screenshot screenshot-widget" aria-hidden="true"></div>
+        <figcaption>
+          <h3>On your home screen</h3>
+          <p>Small and medium widgets carry the gradient where you'll actually see it.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PRIVACY                                                       -->
+<!-- ============================================================ -->
+<section class="privacy">
+  <div class="section-inner">
+    <h2>What stays on your phone</h2>
+    <p class="privacy-line">Everything.</p>
+    <p class="privacy-detail">
+      No accounts. No cloud sync. No analytics on you. Sleep data is read from
+      HealthKit and stored locally on your device. Eclipsed never sees it.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- FOOTER                                                        -->
+<!-- ============================================================ -->
+<footer>
+  <div class="section-inner footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo" aria-hidden="true"></span>
+      <span>Eclipsed</span>
+    </div>
+
+    <nav class="footer-nav">
+      <a href="/privacy">Privacy</a>
+      <a href="/support">Support</a>
+      <a href="https://github.com/ksqstudios/eclipsed-site">Site source</a>
+    </nav>
+
+    <p class="footer-fine">
+      &copy; <span id="year">2026</span> ksq studios. Made in Pennsylvania.
+    </p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+.DS_Store
+.AppleDouble
+._*
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+
+# Local server artifacts
+.cache/
+__pycache__/
+*.pyc

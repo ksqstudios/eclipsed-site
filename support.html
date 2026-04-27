@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3A5878">
+  <title>Support — Eclipsed</title>
+  <meta name="description" content="Help and support for Eclipsed.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://eclipsedsleep.com/support">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .doc {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: clamp(60px, 10vh, 120px) var(--gutter);
+    }
+    .doc h1 {
+      font-size: clamp(32px, 4vw, 44px);
+      margin-bottom: 8px;
+    }
+    .doc .lead {
+      color: var(--ink-soft);
+      font-size: 17px;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+    .doc h2 {
+      font-size: 22px;
+      margin: 40px 0 12px;
+    }
+    .doc h3 {
+      font-size: 17px;
+      margin: 24px 0 8px;
+      color: var(--ink);
+    }
+    .doc p, .doc li {
+      color: var(--ink-soft);
+      line-height: 1.7;
+    }
+    .doc ul, .doc ol {
+      padding-left: 22px;
+    }
+    .contact-card {
+      background: var(--parchment-2);
+      border-radius: 14px;
+      padding: 28px;
+      margin: 48px 0 0;
+      text-align: center;
+    }
+    .contact-card h2 {
+      margin: 0 0 8px;
+    }
+    .contact-card p {
+      margin: 0 0 16px;
+    }
+    .contact-card a {
+      display: inline-block;
+      background: var(--slate-top);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 15px;
+    }
+    .home-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      font-size: 14px;
+      color: var(--ink-faint);
+      text-decoration: none;
+    }
+    .home-link:hover { color: var(--ink); }
+  </style>
+</head>
+<body>
+
+<div class="doc">
+  <a class="home-link" href="/">&larr; Back to Eclipsed</a>
+
+  <h1>Support</h1>
+  <p class="lead">
+    The most common questions and how to fix them. Email reaches a real human.
+  </p>
+
+  <h2>Setup</h2>
+
+  <h3>Eclipsed says "No sleep data yet" but I've worn my watch</h3>
+  <p>
+    Three things to check, in order:
+  </p>
+  <ol>
+    <li>Open <strong>Settings &rarr; Data Source</strong>. If HealthKit shows "Not connected," tap <strong>Connect</strong>.</li>
+    <li>If it's already connected, open the iOS Settings app &rarr; Health &rarr; Data Access &amp; Devices &rarr; Eclipsed and confirm <strong>Sleep Analysis</strong> is enabled.</li>
+    <li>Open the Health app and confirm sleep records actually exist there. If Health is empty, your watch may not be syncing — that's an Apple Watch issue, not an Eclipsed issue.</li>
+  </ol>
+
+  <h3>I changed my target and the numbers look weird</h3>
+  <p>
+    Eclipsed recomputes the entire 30-day window when you change your target or window size. Pull up Tonight or open Settings and tap <strong>Refresh</strong> if anything looks stuck.
+  </p>
+
+  <h2>Reading the gradient</h2>
+
+  <h3>The five stages</h3>
+  <ul>
+    <li><strong>Slate</strong> — under 2 hours of debt over your window. You're rested.</li>
+    <li><strong>Mist</strong> — 2 to 5 hours. Mild deficit.</li>
+    <li><strong>Plum</strong> — 5 to 10 hours. Building up.</li>
+    <li><strong>Rust</strong> — 10 to 20 hours. Significant.</li>
+    <li><strong>Crimson</strong> — 20+ hours. You've been carrying this for a while.</li>
+  </ul>
+  <p>
+    These thresholds assume the default 14-day window. If you've changed it, the meaning shifts proportionally.
+  </p>
+
+  <h3>What's a "gap day"?</h3>
+  <p>
+    A night where Eclipsed couldn't find any sleep data — usually because you didn't wear your watch. Gap nights show as dimmed chips in the strip and "No data" in History. They contribute zero to your debt total, which is the most honest thing we can do without inventing data.
+  </p>
+
+  <h2>Widget</h2>
+
+  <h3>The widget shows old data</h3>
+  <p>
+    Widgets refresh when you open the app, plus once an hour as a fallback. If the widget feels stale, opening Eclipsed once will push fresh numbers.
+  </p>
+
+  <h3>The widget says "Connect HealthKit in the app"</h3>
+  <p>
+    Open Eclipsed and complete the connect flow in Settings. Once data starts flowing, the widget will update on its next refresh.
+  </p>
+
+  <h2>Privacy</h2>
+
+  <h3>Where does my sleep data go?</h3>
+  <p>
+    Nowhere. Read our <a href="/privacy">privacy policy</a> for the full version, but the short version is: it stays on your phone.
+  </p>
+
+  <h3>How do I revoke HealthKit access?</h3>
+  <p>
+    iOS Settings &rarr; Health &rarr; Data Access &amp; Devices &rarr; Eclipsed &rarr; toggle off Sleep Analysis. Eclipsed will stop reading new data immediately.
+  </p>
+
+  <div class="contact-card">
+    <h2>Still stuck?</h2>
+    <p>I read every email and respond personally.</p>
+    <a href="mailto:support@eclipsedsleep.com">support@eclipsedsleep.com</a>
+  </div>
+</div>
+
+<script defer data-domain="eclipsedsleep.com" src="https://plausible.io/js/script.js"></script>
+
+</body>
+</html>
