@@ -255,10 +255,9 @@ a:hover {
   text-align: center;
 }
 
-/* Placeholder visuals until real device mockups land.
-   Each "screenshot" is a 9:19.5 aspect rounded rect with the relevant gradient.
-   When you swap in real screenshot images, replace the inner gradient with a
-   background-image: url(...) and remove the ::before content. */
+/* Real screenshots replace the placeholder gradient blocks. The
+   aspect-ratio + max-width still constrain the rendered size, but
+   background-image now carries the actual content. */
 
 .screenshot {
   width: 100%;
@@ -267,6 +266,9 @@ a:hover {
   margin: 0 auto 28px;
   border-radius: 32px;
   position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   box-shadow:
     0 1px 2px rgba(0, 0, 0, 0.06),
     0 12px 32px rgba(0, 0, 0, 0.10);
@@ -274,29 +276,15 @@ a:hover {
 }
 
 .screenshot-tonight {
-  background: linear-gradient(135deg, var(--rust-top), var(--rust-bot));
+  background-image: url("/screenshots/tonight.png");
 }
 
 .screenshot-history {
-  background: var(--parchment);
-}
-
-.screenshot-history::before {
-  content: "";
-  position: absolute;
-  top: 14%;
-  left: 8%;
-  right: 8%;
-  bottom: 8%;
-  background-image: linear-gradient(var(--rule), var(--rule));
-  background-size: 100% 1px;
-  background-repeat: repeat-y;
-  background-position: 0 12.5%;
-  opacity: 0.5;
+  background-image: url("/screenshots/history.png");
 }
 
 .screenshot-widget {
-  background: linear-gradient(135deg, var(--plum-top), var(--plum-bot));
+  background-image: url("/screenshots/widget.png");
 }
 
 .also-grid h3 {
