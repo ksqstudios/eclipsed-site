@@ -81,20 +81,20 @@
 <!-- ============================================================ -->
 <section class="how">
   <div class="section-inner">
-    <h2>How it works</h2>
+    <h2 class="fade-in">How it works</h2>
 
     <ol class="steps">
-      <li>
+      <li class="fade-in">
         <span class="step-num">1</span>
         <h3>Connect HealthKit</h3>
         <p>Eclipsed reads sleep records from the Health app. Your watch already knows; we just ask politely.</p>
       </li>
-      <li>
+      <li class="fade-in">
         <span class="step-num">2</span>
         <h3>We compute the debt</h3>
         <p>Each night, target minus actual. Surplus capped so a Saturday lie-in can't erase a week of short nights.</p>
       </li>
-      <li>
+      <li class="fade-in">
         <span class="step-num">3</span>
         <h3>The color tells the story</h3>
         <p>Slate when you're rested. Crimson when you've been carrying it for weeks. Five stages, one glance.</p>
@@ -108,10 +108,10 @@
 <!-- ============================================================ -->
 <section class="also">
   <div class="section-inner">
-    <h2>Also</h2>
+    <h2 class="fade-in">Also</h2>
 
     <div class="also-grid">
-      <figure>
+      <figure class="fade-in">
         <div class="screenshot screenshot-tonight" aria-hidden="true"></div>
         <figcaption>
           <h3>A 14-day strip</h3>
@@ -119,7 +119,7 @@
         </figcaption>
       </figure>
 
-      <figure>
+      <figure class="fade-in">
         <div class="screenshot screenshot-history" aria-hidden="true"></div>
         <figcaption>
           <h3>The receipts</h3>
@@ -127,7 +127,7 @@
         </figcaption>
       </figure>
 
-      <figure>
+      <figure class="fade-in">
         <div class="screenshot screenshot-widget" aria-hidden="true"></div>
         <figcaption>
           <h3>On your home screen</h3>
@@ -143,9 +143,9 @@
 <!-- ============================================================ -->
 <section class="privacy">
   <div class="section-inner">
-    <h2>What stays on your phone</h2>
-    <p class="privacy-line">Everything.</p>
-    <p class="privacy-detail">
+    <h2 class="fade-in">What stays on your phone</h2>
+    <p class="privacy-line fade-in">Everything.</p>
+    <p class="privacy-detail fade-in">
       No accounts. No cloud sync. No analytics on you. Sleep data is read from
       HealthKit and stored locally on your device. Eclipsed never sees it.
     </p>
@@ -175,7 +175,33 @@
 </footer>
 
 <script>
+  // Year in footer
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Scroll fade-in. Adds .is-visible to .fade-in elements once they
+  // enter the viewport, then unobserves them. Single observer, low cost.
+  (function () {
+    const els = document.querySelectorAll('.fade-in');
+    if (!('IntersectionObserver' in window) || els.length === 0) {
+      // Old browser or nothing to fade — show everything immediately.
+      els.forEach(el => el.classList.add('is-visible'));
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {
+      rootMargin: '0px 0px -10% 0px',
+      threshold: 0.05
+    });
+
+    els.forEach(el => io.observe(el));
+  })();
 </script>
 
 </body>
