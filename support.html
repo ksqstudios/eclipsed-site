@@ -93,12 +93,71 @@
   <ol>
     <li>Open <strong>Settings &rarr; Data Source</strong>. If HealthKit shows "Not connected," tap <strong>Connect</strong>.</li>
     <li>If it's already connected, open the iOS Settings app &rarr; Health &rarr; Data Access &amp; Devices &rarr; Eclipsed and confirm <strong>Sleep Analysis</strong> is enabled.</li>
-    <li>Open the Health app and confirm sleep records actually exist there. If Health is empty, your watch may not be syncing — that's an Apple Watch issue, not an Eclipsed issue.</li>
+    <li>Open the Health app and confirm sleep records actually exist there. If Health is empty, your watch may not be syncing. That's an Apple Watch issue, not an Eclipsed issue.</li>
   </ol>
 
   <h3>I changed my target and the numbers look weird</h3>
   <p>
     Eclipsed recomputes the entire 30-day window when you change your target or window size. Pull up Tonight or open Settings and tap <strong>Refresh</strong> if anything looks stuck.
+  </p>
+
+  <h2>Apple Watch</h2>
+
+  <h3>The watch app is empty but the iPhone app works</h3>
+  <p>
+    The watch asks for Health access separately from the iPhone. Granting access
+    on the phone does not grant it on the watch. Open Eclipsed on your watch and
+    accept the Health prompt there; if a request appears on your iPhone instead,
+    approve it from the phone. This is how Apple designed Health permissions,
+    and it only needs doing once.
+  </p>
+
+  <h3>The watch shows a different number than the phone</h3>
+  <p>
+    Your iPhone computes the full history and pushes its numbers to the watch,
+    so the phone is always the source of truth. If the watch looks behind, open
+    Eclipsed on the iPhone once; the fresh numbers reach the watch on the next
+    connection between the two devices.
+  </p>
+
+  <h3>The complication isn't updating</h3>
+  <p>
+    Complications refresh on the system's schedule, plus whenever you open the
+    watch app. Sleep debt only moves once per night, so a complication that
+    matches yesterday evening's number is usually just accurate. If it seems
+    genuinely stuck, open the watch app once to force a refresh.
+  </p>
+
+  <h2>Sleep Intelligence</h2>
+
+  <h3>I don't see the reflection feature</h3>
+  <p>
+    Sleep Intelligence requires a device with Apple Intelligence enabled. On
+    devices without it, the Reflect entry doesn't appear and everything else in
+    Eclipsed works exactly the same.
+  </p>
+
+  <h3>How often does it write?</h3>
+  <p>
+    Every two weeks, covering the nights since the last reflection. It is
+    written entirely on your device, and no one else ever sees it.
+  </p>
+
+  <h2>iCloud sync</h2>
+
+  <h3>What syncs, and where?</h3>
+  <p>
+    Your computed history and reflections sync between your devices through
+    your own private iCloud database. Nothing passes through any server of
+    ours, and no one but your signed-in devices can read it. See the
+    <a href="/privacy">privacy policy</a> for the full picture.
+  </p>
+
+  <h3>How do I turn sync off?</h3>
+  <p>
+    iOS Settings &rarr; your Apple Account &rarr; iCloud &rarr; see all apps
+    using iCloud &rarr; toggle off Eclipsed. Your local data stays on each
+    device; it just stops moving between them.
   </p>
 
   <h2>Reading the gradient</h2>
@@ -117,7 +176,7 @@
 
   <h3>What's a "gap day"?</h3>
   <p>
-    A night where Eclipsed couldn't find any sleep data — usually because you didn't wear your watch. Gap nights show as dimmed chips in the strip and "No data" in History. They contribute zero to your debt total, which is the most honest thing we can do without inventing data.
+    A night where Eclipsed couldn't find any sleep data, usually because you didn't wear your watch. Gap nights show as dimmed chips in the strip and "No data" in History. They contribute zero to your debt total, which is the most honest thing we can do without inventing data.
   </p>
 
   <h2>Widget</h2>
@@ -136,12 +195,14 @@
 
   <h3>Where does my sleep data go?</h3>
   <p>
-    Nowhere. Read our <a href="/privacy">privacy policy</a> for the full version, but the short version is: it stays on your phone.
+    It stays on your devices, and if you use iCloud sync, it moves between them
+    through your own iCloud. Nowhere else. Read our <a href="/privacy">privacy
+    policy</a> for the full version.
   </p>
 
   <h3>How do I revoke HealthKit access?</h3>
   <p>
-    iOS Settings &rarr; Health &rarr; Data Access &amp; Devices &rarr; Eclipsed &rarr; toggle off Sleep Analysis. Eclipsed will stop reading new data immediately.
+    iOS Settings &rarr; Health &rarr; Data Access &amp; Devices &rarr; Eclipsed &rarr; toggle off Sleep Analysis. Eclipsed will stop reading new data immediately. The watch has its own grant; revoke it the same way on the watch if you want both off.
   </p>
 
   <div class="contact-card">

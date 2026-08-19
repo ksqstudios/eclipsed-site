@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#3A5878">
 
   <title>Eclipsed — You feel it before the numbers do</title>
-  <meta name="description" content="Eclipsed shows you the sleep debt you've quietly accumulated. Reads HealthKit, computes a rolling total, surfaces it through a five-stage gradient. On-device, no accounts, no cloud sync.">
+  <meta name="description" content="Eclipsed shows you the sleep debt you've quietly accumulated. Reads HealthKit, computes a rolling total, surfaces it through a five-stage gradient. On iPhone and Apple Watch. No accounts, no analytics.">
 
   <!-- Open Graph / social -->
   <meta property="og:type" content="website">
@@ -34,9 +34,9 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Eclipsed",
-    "operatingSystem": "iOS",
+    "operatingSystem": "iOS, watchOS",
     "applicationCategory": "HealthApplication",
-    "description": "Sleep debt utility for iOS. Reads HealthKit, computes a rolling debt total, surfaces it through a five-stage gradient.",
+    "description": "Sleep debt utility for iPhone and Apple Watch. Reads HealthKit, computes a rolling debt total, surfaces it through a five-stage gradient, and writes a short on-device reflection every two weeks.",
     "publisher": {
       "@type": "Organization",
       "name": "KSQ Studios LLC",
@@ -65,14 +65,14 @@
     <p class="lede">
       Sleep debt is real, and it's quietly accumulating. Eclipsed reads your sleep
       from HealthKit, computes a rolling total, and shows you exactly how much
-      you're carrying — through a gradient that warms with the weight.
+      you're carrying, through a gradient that warms with the weight.
     </p>
 
     <div class="cta-row">
       <a class="btn btn-primary" href="https://apps.apple.com/us/app/eclipsed/id6764891875" rel="noopener">Download on the App Store</a>
     </div>
 
-    <p class="meta">iPhone · iOS 18+ · One-time purchase · No subscription</p>
+    <p class="meta">iPhone and Apple Watch · iOS 26+ · One-time purchase · No subscription</p>
   </div>
 </section>
 
@@ -104,6 +104,40 @@
 </section>
 
 <!-- ============================================================ -->
+<!-- NEW IN 2.0                                                    -->
+<!-- ============================================================ -->
+<section class="new-in-2" style="padding: clamp(80px, 12vh, 140px) 0; border-bottom: 1px solid var(--rule);">
+  <div class="section-inner">
+    <h2 class="fade-in">New in 2.0</h2>
+
+    <div class="fade-in" style="max-width: 640px;">
+      <h3 style="font-size: 22px; margin: 36px 0 10px;">On your wrist</h3>
+      <p style="font-family: var(--sans); font-size: 16px; line-height: 1.7; color: var(--ink-soft); margin: 0;">
+        A native Apple Watch app shows tonight's number and your past 14 nights,
+        right where you'll see them last thing before bed. Four complication
+        styles keep the number on your watch face all day, and your iPhone keeps
+        the watch in sync so the story matches everywhere you look.
+      </p>
+
+      <h3 style="font-size: 22px; margin: 36px 0 10px;">Your sleep, read back to you</h3>
+      <p style="font-family: var(--sans); font-size: 16px; line-height: 1.7; color: var(--ink-soft); margin: 0;">
+        Every two weeks, Eclipsed writes you a short reflection about your recent
+        nights. Not a chart and not a score. A few honest sentences, composed
+        entirely on your device and shown to no one but you. Requires a device
+        with Apple Intelligence.
+      </p>
+
+      <h3 style="font-size: 22px; margin: 36px 0 10px;">Everywhere you are</h3>
+      <p style="font-family: var(--sans); font-size: 16px; line-height: 1.7; color: var(--ink-soft); margin: 0;">
+        Your history now follows you between devices through your own private
+        iCloud database. Nothing leaves your iCloud, and nothing is shared with
+        anyone.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
 <!-- ALSO                                                          -->
 <!-- ============================================================ -->
 <section class="also">
@@ -115,7 +149,7 @@
         <div class="screenshot screenshot-tonight" aria-hidden="true"></div>
         <figcaption>
           <h3>A 14-day strip</h3>
-          <p>Below tonight's headline, the past two weeks at a glance — one chip per night, dimmed for nights without data.</p>
+          <p>Below tonight's headline, the past two weeks at a glance. One chip per night, dimmed for nights without data.</p>
         </figcaption>
       </figure>
 
@@ -143,11 +177,13 @@
 <!-- ============================================================ -->
 <section class="privacy">
   <div class="section-inner">
-    <h2 class="fade-in">What stays on your phone</h2>
+    <h2 class="fade-in">What stays yours</h2>
     <p class="privacy-line fade-in">Everything.</p>
     <p class="privacy-detail fade-in">
-      No accounts. No cloud sync. No analytics on you. Sleep data is read from
-      HealthKit and stored locally on your device. Eclipsed never sees it.
+      No accounts. No analytics on you. Sleep data is read from HealthKit and
+      stored on your device. If you use iCloud sync, your history moves between
+      your devices through your own private iCloud database, encrypted and
+      unreadable by anyone else. Including us.
     </p>
   </div>
 </section>
@@ -159,7 +195,7 @@
   <div class="section-inner">
     <h2 class="fade-in">Made by</h2>
     <p class="fade-in" style="font-family: var(--sans); font-size: 16px; line-height: 1.7; color: var(--ink-soft); max-width: 640px; margin: 0 0 12px;">
-      Eclipsed is designed, built, and supported by one person &mdash; Kurt Klein &mdash; in Berwyn, Pennsylvania. It's one of five apps from <a href="https://ksqstudios.com" style="color: var(--ink); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px;">KSQ Studios</a>, alongside <a href="https://minuted.org" style="color: var(--ink); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px;">Minuted</a>, <a href="https://winnowed.app" style="color: var(--ink); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px;">Winnowed</a>, <a href="https://endured.app" style="color: var(--ink); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px;">Endured</a>, and <a href="https://vesperine.app" style="color: var(--ink); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px;">Vesperine</a>.
+      Eclipsed is designed, built, and supported by one person, Kurt Klein, in Berwyn, Pennsylvania. It's one of five apps from <a href="https://ksqstudios.com" style="color: var(--ink); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px;">KSQ Studios</a>, alongside <a href="https://minuted.org" style="color: var(--ink); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px;">Minuted</a>, <a href="https://winnowed.app" style="color: var(--ink); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px;">Winnowed</a>, <a href="https://endured.app" style="color: var(--ink); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px;">Endured</a>, and <a href="https://vesperine.app" style="color: var(--ink); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px;">Vesperine</a>.
     </p>
     <p class="fade-in" style="font-family: var(--sans); font-size: 14px; line-height: 1.7; color: var(--ink-faint); max-width: 640px; margin: 0;">
       If you've used it and want to say hello, report a bug, or suggest something: <a href="mailto:techsupport@ksqstudios.com" style="color: var(--ink-faint); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px;">techsupport@ksqstudios.com</a>.
@@ -199,7 +235,7 @@
   (function () {
     const els = document.querySelectorAll('.fade-in');
     if (!('IntersectionObserver' in window) || els.length === 0) {
-      // Old browser or nothing to fade — show everything immediately.
+      // Old browser or nothing to fade, show everything immediately.
       els.forEach(el => el.classList.add('is-visible'));
       return;
     }
