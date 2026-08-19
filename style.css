@@ -1,11 +1,11 @@
 /* ============================================================ */
-/*  Eclipsed — marketing site styles                              */
+/*  Eclipsed - marketing site styles                              */
 /*  Vigil palette: slate · mist · plum · rust · crimson           */
 /*  Background: parchment (matches in-app screen background)      */
 /* ============================================================ */
 
 :root {
-  /* Vigil stage colors — match EclipsedPalette.swift exactly */
+  /* Vigil stage colors - match EclipsedPalette.swift exactly */
   --slate-top:    #3A5878;
   --slate-bot:    #6E92B5;
   --mist-top:     #4F5680;
@@ -184,6 +184,7 @@ a:hover {
 }
 
 .how h2,
+.new-in-2 h2,
 .also h2,
 .privacy h2 {
   font-size: clamp(28px, 3.6vw, 40px);
