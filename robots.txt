@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://eclipsedsleep.com/sitemap.xml
+Sitemap: https://eclipsedsleep.app/sitemap.xml
