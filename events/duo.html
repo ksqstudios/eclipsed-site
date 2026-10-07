@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#3A5878">
+  <title>What's new in 2.1 · Eclipsed</title>
+  <meta name="description" content="Eclipsed 2.1: your sleep debt on the Lock Screen and in StandBy, from Siri and Shortcuts, and on iPhone Duo.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="canonical" href="https://eclipsedsleep.app/event/duo">
+  <link rel="stylesheet" href="/style.css">
+  <!--
+    Fallback for the App Store In-App Event link. With Eclipsed installed,
+    https://eclipsedsleep.app/event/duo (or the .com) opens the app's
+    What's New sheet instead of this page; the AASA file claims /event/*.
+    Same lines as WhatsNewSheet.swift, so keep the two in step.
+    Must be live BEFORE the event's start date.
+    Deliberately left out of sitemap.xml: it is a landing for one link.
+  -->
+  <style>
+    .event {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: clamp(40px, 8vh, 96px) var(--gutter);
+    }
+    .home-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      font-size: 14px;
+      color: var(--ink-faint);
+      text-decoration: none;
+    }
+    .home-link:hover { color: var(--ink); }
+    .event .band {
+      background: linear-gradient(135deg, var(--slate-top), var(--slate-bot));
+      border-radius: 20px;
+      padding: 72px 28px 24px;
+      margin-bottom: 36px;
+    }
+    .event .band h1 {
+      color: white;
+      font-size: clamp(32px, 5vw, 44px);
+      margin: 0;
+    }
+    .event ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 40px;
+    }
+    .event li {
+      color: var(--ink-soft);
+      font-size: 17px;
+      line-height: 1.6;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .event li:first-child { padding-top: 0; }
+    .event .meta { margin-top: 18px; }
+  </style>
+</head>
+<body>
+
+<div class="event">
+  <a class="home-link" href="/">&larr; Back to Eclipsed</a>
+
+  <div class="band">
+    <h1>What's new in 2.1</h1>
+  </div>
+
+  <ul>
+    <li>Your sleep debt can now sit on the Lock Screen, and on the nightstand in StandBy.</li>
+    <li>Ask Siri how much sleep you owe, or use the number in a Shortcut.</li>
+    <li>On iPhone Duo, the inner display shows your history beside tonight's number.</li>
+  </ul>
+
+  <a class="btn btn-primary" href="https://apps.apple.com/us/app/eclipsed/id6764891875" rel="noopener">Download on the App Store</a>
+  <p class="meta">iPhone and Apple Watch · One-time purchase · No subscription</p>
+</div>
+
+</body>
+</html>
