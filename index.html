@@ -3,30 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#3A5878">
-
-  <title>Eclipsed — You feel it before the numbers do</title>
+  <meta name="theme-color" content="#121726">
+  <title>Eclipsed, you feel it before the numbers do</title>
   <meta name="description" content="Eclipsed shows you the sleep debt you've quietly accumulated. Reads HealthKit, computes a rolling total, surfaces it through a five-stage gradient. On iPhone and Apple Watch. No accounts, no analytics.">
-
-  <!-- Open Graph / social -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://eclipsedsleep.app/">
-  <meta property="og:title" content="Eclipsed — You feel it before the numbers do">
+  <meta property="og:title" content="Eclipsed, you feel it before the numbers do">
   <meta property="og:description" content="Sleep debt, made visible. Reads HealthKit, computes a rolling total, surfaces it through a five-stage gradient.">
   <meta property="og:image" content="https://eclipsedsleep.app/og.png">
-
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Eclipsed — You feel it before the numbers do">
+  <meta name="twitter:title" content="Eclipsed, you feel it before the numbers do">
   <meta name="twitter:description" content="Sleep debt, made visible.">
   <meta name="twitter:image" content="https://eclipsedsleep.app/og.png">
-
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="canonical" href="https://eclipsedsleep.app/">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
-
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -39,218 +34,261 @@
       "@type": "Organization",
       "name": "KSQ Studios LLC",
       "url": "https://ksqstudios.com"
-    }
+    },
+    "url": "https://eclipsedsleep.app/",
+    "downloadUrl": "https://apps.apple.com/us/app/eclipsed/id6764891875"
   }
   </script>
 </head>
 <body>
 
-<!-- ============================================================ -->
-<!-- HERO                                                          -->
-<!-- ============================================================ -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="chips" aria-hidden="true">
-      <span class="chip chip-slate"></span>
-      <span class="chip chip-mist"></span>
-      <span class="chip chip-plum"></span>
-      <span class="chip chip-rust"></span>
-      <span class="chip chip-crimson"></span>
-    </div>
-
-    <h1>You feel it<br>before the numbers do.</h1>
-
-    <p class="lede">
-      Sleep debt is real, and it's quietly accumulating. Eclipsed reads your sleep
-      from HealthKit, computes a rolling total, and shows you exactly how much
-      you're carrying, through a gradient that warms with the weight.
-    </p>
-
-    <div class="cta-row">
-      <a class="btn btn-primary" href="https://apps.apple.com/us/app/eclipsed/id6764891875" rel="noopener">Download on the App Store</a>
-    </div>
-
-    <p class="meta">iPhone and Apple Watch · iOS 26+ · One-time purchase · No subscription</p>
+<header class="bar">
+  <div class="bar-inner">
+    <a class="mark" href="/">
+      <img src="/favicon.svg" alt="" width="28" height="28">
+      Eclipsed
+    </a>
+    <nav aria-label="Site">
+      <a href="/support">Support</a>
+      <a class="bar-cta" href="https://apps.apple.com/us/app/eclipsed/id6764891875" rel="noopener">Get Eclipsed</a>
+    </nav>
   </div>
-</section>
+</header>
 
-<!-- ============================================================ -->
-<!-- HOW IT WORKS                                                  -->
-<!-- ============================================================ -->
-<section class="how">
-  <div class="section-inner">
-    <h2 class="fade-in">How it works</h2>
+<main>
 
-    <ol class="steps">
-      <li class="fade-in">
-        <span class="step-num">1</span>
-        <h3>Connect HealthKit</h3>
-        <p>Eclipsed reads sleep records from the Health app. Your watch already knows; we just ask politely.</p>
-      </li>
-      <li class="fade-in">
-        <span class="step-num">2</span>
-        <h3>We compute the debt</h3>
-        <p>Each night, target minus actual. Surplus capped so a Saturday lie-in can't erase a week of short nights.</p>
-      </li>
-      <li class="fade-in">
-        <span class="step-num">3</span>
-        <h3>The color tells the story</h3>
-        <p>Slate when you're rested. Crimson when you've been carrying it for weeks. Five stages, one glance.</p>
-      </li>
-    </ol>
-  </div>
-</section>
+  <!-- The hero is a lunar eclipse. The earth's shadow crosses the moon and
+       turns it red, the way the app's stages run from slate to crimson. -->
+  <section class="hero">
+    <svg class="stars" aria-hidden="true" preserveAspectRatio="none"><circle cx="3.75%" cy="43.36%" r="0.6" fill="var(--moon)" opacity="0.38"/><circle cx="55.10%" cy="5.91%" r="1.4" fill="var(--moon)" opacity="0.32"/><circle cx="22.32%" cy="62.74%" r="0.6" fill="var(--moon)" opacity="0.57"/><circle cx="39.67%" cy="97.63%" r="0.6" fill="var(--moon)" opacity="0.56"/><circle cx="13.32%" cy="41.91%" r="1.4" fill="var(--moon)" opacity="0.31"/><circle cx="30.85%" cy="81.61%" r="0.8" fill="var(--moon)" opacity="0.31"/><circle cx="57.12%" cy="18.79%" r="0.6" fill="var(--moon)" opacity="0.55"/><circle cx="6.28%" cy="5.96%" r="0.8" fill="var(--moon)" opacity="0.52"/><circle cx="53.17%" cy="77.72%" r="1.0" fill="var(--moon)" opacity="0.57"/><circle cx="45.32%" cy="29.98%" r="0.8" fill="var(--moon)" opacity="0.63"/><circle cx="24.41%" cy="57.44%" r="1.4" fill="var(--moon)" opacity="0.52"/><circle cx="34.35%" cy="44.88%" r="1.4" fill="var(--moon)" opacity="0.79"/><circle cx="11.81%" cy="41.81%" r="1.0" fill="var(--moon)" opacity="0.33"/><circle cx="48.90%" cy="3.92%" r="0.6" fill="var(--moon)" opacity="0.67"/><circle cx="57.30%" cy="87.55%" r="1.0" fill="var(--moon)" opacity="0.44"/><circle cx="35.02%" cy="49.67%" r="1.0" fill="var(--moon)" opacity="0.29"/><circle cx="9.36%" cy="26.99%" r="0.6" fill="var(--moon)" opacity="0.28"/><circle cx="70.15%" cy="64.71%" r="1.0" fill="var(--moon)" opacity="0.41"/><circle cx="38.58%" cy="66.87%" r="0.6" fill="var(--moon)" opacity="0.77"/><circle cx="35.55%" cy="61.09%" r="1.0" fill="var(--moon)" opacity="0.28"/><circle cx="76.82%" cy="12.93%" r="0.8" fill="var(--moon)" opacity="0.47"/><circle cx="91.68%" cy="49.65%" r="0.8" fill="var(--moon)" opacity="0.50"/><circle cx="54.94%" cy="88.34%" r="1.0" fill="var(--moon)" opacity="0.73"/><circle cx="27.84%" cy="41.53%" r="1.0" fill="var(--moon)" opacity="0.63"/><circle cx="38.04%" cy="23.08%" r="0.6" fill="var(--moon)" opacity="0.35"/><circle cx="23.20%" cy="23.33%" r="1.0" fill="var(--moon)" opacity="0.71"/><circle cx="18.23%" cy="28.19%" r="0.8" fill="var(--moon)" opacity="0.48"/><circle cx="36.93%" cy="56.63%" r="0.8" fill="var(--moon)" opacity="0.63"/><circle cx="51.55%" cy="61.76%" r="0.6" fill="var(--moon)" opacity="0.50"/><circle cx="87.10%" cy="95.19%" r="1.4" fill="var(--moon)" opacity="0.47"/><circle cx="39.90%" cy="10.35%" r="1.0" fill="var(--moon)" opacity="0.28"/><circle cx="6.73%" cy="20.88%" r="0.8" fill="var(--moon)" opacity="0.31"/><circle cx="60.07%" cy="10.24%" r="1.4" fill="var(--moon)" opacity="0.33"/><circle cx="10.15%" cy="36.36%" r="0.6" fill="var(--moon)" opacity="0.29"/><circle cx="20.80%" cy="37.62%" r="1.0" fill="var(--moon)" opacity="0.78"/><circle cx="60.23%" cy="47.42%" r="0.6" fill="var(--moon)" opacity="0.72"/><circle cx="99.31%" cy="46.60%" r="1.0" fill="var(--moon)" opacity="0.42"/><circle cx="14.41%" cy="74.97%" r="1.0" fill="var(--moon)" opacity="0.51"/><circle cx="69.21%" cy="51.63%" r="0.8" fill="var(--moon)" opacity="0.77"/><circle cx="52.83%" cy="14.66%" r="1.4" fill="var(--moon)" opacity="0.75"/><circle cx="75.81%" cy="29.81%" r="0.6" fill="var(--moon)" opacity="0.63"/><circle cx="26.11%" cy="36.67%" r="0.8" fill="var(--moon)" opacity="0.45"/><circle cx="22.28%" cy="54.16%" r="1.4" fill="var(--moon)" opacity="0.43"/><circle cx="22.30%" cy="81.15%" r="0.8" fill="var(--moon)" opacity="0.69"/><circle cx="81.83%" cy="73.99%" r="0.8" fill="var(--moon)" opacity="0.36"/><circle cx="49.28%" cy="73.10%" r="0.6" fill="var(--moon)" opacity="0.68"/><circle cx="47.22%" cy="19.36%" r="1.4" fill="var(--moon)" opacity="0.78"/><circle cx="44.72%" cy="93.70%" r="1.0" fill="var(--moon)" opacity="0.78"/><circle cx="36.46%" cy="22.05%" r="0.8" fill="var(--moon)" opacity="0.51"/><circle cx="33.77%" cy="48.27%" r="1.4" fill="var(--moon)" opacity="0.71"/><circle cx="47.95%" cy="65.30%" r="0.6" fill="var(--moon)" opacity="0.71"/><circle cx="11.99%" cy="38.85%" r="0.8" fill="var(--moon)" opacity="0.51"/><circle cx="17.85%" cy="78.91%" r="1.0" fill="var(--moon)" opacity="0.30"/><circle cx="94.62%" cy="72.18%" r="1.0" fill="var(--moon)" opacity="0.47"/><circle cx="94.68%" cy="72.48%" r="0.8" fill="var(--moon)" opacity="0.80"/><circle cx="2.75%" cy="59.08%" r="1.0" fill="var(--moon)" opacity="0.69"/><circle cx="14.62%" cy="82.65%" r="1.0" fill="var(--moon)" opacity="0.61"/><circle cx="35.04%" cy="54.87%" r="0.8" fill="var(--moon)" opacity="0.26"/><circle cx="79.94%" cy="72.64%" r="0.6" fill="var(--moon)" opacity="0.54"/><circle cx="93.36%" cy="43.38%" r="0.8" fill="var(--moon)" opacity="0.70"/><circle cx="21.10%" cy="25.18%" r="1.0" fill="var(--moon)" opacity="0.53"/><circle cx="76.37%" cy="32.60%" r="1.4" fill="var(--moon)" opacity="0.48"/><circle cx="13.11%" cy="91.00%" r="1.0" fill="var(--moon)" opacity="0.74"/><circle cx="66.25%" cy="81.50%" r="1.4" fill="var(--moon)" opacity="0.48"/><circle cx="91.77%" cy="50.16%" r="1.4" fill="var(--moon)" opacity="0.33"/><circle cx="51.05%" cy="87.28%" r="0.8" fill="var(--moon)" opacity="0.58"/><circle cx="77.60%" cy="14.98%" r="0.8" fill="var(--moon)" opacity="0.51"/><circle cx="72.52%" cy="55.65%" r="1.0" fill="var(--moon)" opacity="0.63"/><circle cx="53.07%" cy="48.25%" r="0.6" fill="var(--moon)" opacity="0.74"/><circle cx="5.68%" cy="19.13%" r="0.6" fill="var(--moon)" opacity="0.67"/></svg>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h1>You feel it before the numbers do.</h1>
+        <p class="lede">
+          Sleep debt is real, and it's quietly accumulating. Eclipsed reads
+          your sleep from Health, keeps a rolling total, and shows you exactly
+          how much you're carrying, through color that deepens with the
+          weight.
+        </p>
+        <p class="buy">
+          <a class="button" href="https://apps.apple.com/us/app/eclipsed/id6764891875" rel="noopener">Download on the App Store</a>
+          <span>iPhone and Apple Watch. One-time purchase, no subscription.</span>
+        </p>
+      </div>
 
-<!-- ============================================================ -->
-<!-- NEW IN 2.0                                                    -->
-<!-- ============================================================ -->
-<section class="new-in-2" style="padding: clamp(80px, 12vh, 140px) 0; border-bottom: 1px solid var(--rule);">
-  <div class="section-inner">
-    <h2 class="fade-in">New in 2.0</h2>
+      <figure class="eclipse">
+        <svg viewBox="0 0 400 400" role="img" aria-labelledby="eclipse-caption">
+          <defs>
+            <radialGradient id="moonlight" cx="42%" cy="38%" r="70%">
+              <stop offset="0" stop-color="#f6f1e6"/>
+              <stop offset="0.7" stop-color="#e6ddcb"/>
+              <stop offset="1" stop-color="#cdc2ad"/>
+            </radialGradient>
+            <radialGradient id="blood" cx="30%" cy="50%" r="80%">
+              <stop offset="0" stop-color="#bd6968"/>
+              <stop offset="0.55" stop-color="#8b3d45"/>
+              <stop offset="1" stop-color="#5e1418"/>
+            </radialGradient>
+            <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="9"/>
+            </filter>
+            <radialGradient id="glow">
+              <stop offset="0.72" stop-color="#f6f1e6" stop-opacity="0.16"/>
+              <stop offset="1" stop-color="#f6f1e6" stop-opacity="0"/>
+            </radialGradient>
+            <clipPath id="disc"><circle cx="200" cy="200" r="150"/></clipPath>
+          </defs>
+          <circle cx="200" cy="200" r="198" fill="url(#glow)"/>
+          <circle cx="200" cy="200" r="150" fill="url(#moonlight)"/>
+          <g clip-path="url(#disc)" opacity="0.14" fill="#7c725f">
+            <circle cx="160" cy="150" r="34"/>
+            <circle cx="232" cy="178" r="22"/>
+            <circle cx="186" cy="248" r="40"/>
+            <circle cx="262" cy="262" r="16"/>
+          </g>
+          <g clip-path="url(#disc)">
+            <g class="shadow">
+              <circle cx="334" cy="200" r="220" fill="#1a1020" opacity="0.35" filter="url(#soft)"/>
+              <circle cx="334" cy="200" r="200" fill="url(#blood)" opacity="0.93"/>
+            </g>
+          </g>
+        </svg>
+        <figcaption id="eclipse-caption">
+          <span class="eclipse-figure">19h 54m</span>
+          owed over the past 14 nights. That is Rust, the fourth of five stages.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
 
-    <div class="fade-in" style="max-width: 640px;">
-      <h3 style="font-size: 22px; margin: 36px 0 10px;">On your wrist</h3>
-      <p style="font-family: var(--sans); font-size: 16px; line-height: 1.7; color: var(--ink-soft); margin: 0;">
-        A native Apple Watch app shows tonight's number and your past 14 nights,
-        right where you'll see them last thing before bed. Four complication
-        styles keep the number on your watch face all day, and your iPhone keeps
-        the watch in sync so the story matches everywhere you look.
+  <section class="almanac" aria-labelledby="almanac-title">
+    <div class="almanac-copy">
+      <h2 id="almanac-title">Every night, target minus actual</h2>
+      <p>
+        Eclipsed reads sleep records from the Health app. Your watch already
+        knows; Eclipsed just asks politely.
       </p>
+      <p>
+        Each night it takes your target, subtracts what you slept, and adds
+        the difference to a rolling total. Surplus is capped, so a Saturday
+        lie-in can't erase a week of short nights.
+      </p>
+      <p>
+        The receipts are always there: how long you slept, what you owed,
+        and where the data came from.
+      </p>
+    </div>
+    <figure class="ledger">
+      <table>
+        <caption>Recent nights against an 8 hour target</caption>
+        <thead>
+          <tr><th scope="col">Night</th><th scope="col">Slept</th><th scope="col">Owed</th><th scope="col"><span class="visually-hidden">Shown as an eclipse</span></th></tr>
+        </thead>
+        <tbody>
+            <tr><th scope="row">Friday, Oct 9</th><td>6h 30m</td><td>1h 30m</td><td><svg class="night-moon" viewBox="0 0 40 40" role="img" aria-label="1h 30m owed of 8 hours"><defs><clipPath id="m324020"><circle cx="20" cy="20" r="16"/></clipPath></defs><circle cx="20" cy="20" r="16" fill="var(--moon)"/><g clip-path="url(#m324020)"><circle class="umbra" cx="50.80" cy="20" r="20.80" fill="var(--rust-shadow)"/></g></svg></td></tr>
+            <tr><th scope="row">Thursday, Oct 8</th><td>6h 6m</td><td>1h 54m</td><td><svg class="night-moon" viewBox="0 0 40 40" role="img" aria-label="1h 54m owed of 8 hours"><defs><clipPath id="m151086"><circle cx="20" cy="20" r="16"/></clipPath></defs><circle cx="20" cy="20" r="16" fill="var(--moon)"/><g clip-path="url(#m151086)"><circle class="umbra" cx="49.20" cy="20" r="20.80" fill="var(--rust-shadow)"/></g></svg></td></tr>
+            <tr><th scope="row">Wednesday, Oct 7</th><td>6h 36m</td><td>1h 24m</td><td><svg class="night-moon" viewBox="0 0 40 40" role="img" aria-label="1h 24m owed of 8 hours"><defs><clipPath id="m651109"><circle cx="20" cy="20" r="16"/></clipPath></defs><circle cx="20" cy="20" r="16" fill="var(--moon)"/><g clip-path="url(#m651109)"><circle class="umbra" cx="51.20" cy="20" r="20.80" fill="var(--rust-shadow)"/></g></svg></td></tr>
+            <tr class="no-data"><th scope="row">Tuesday, Oct 6</th><td>No data</td><td></td><td><svg class="night-moon" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15" fill="none" stroke="var(--moon-dim)" stroke-width="1.5" stroke-dasharray="3 4"/></svg></td></tr>
+            <tr><th scope="row">Monday, Oct 5</th><td>6h 12m</td><td>1h 48m</td><td><svg class="night-moon" viewBox="0 0 40 40" role="img" aria-label="1h 48m owed of 8 hours"><defs><clipPath id="m72661"><circle cx="20" cy="20" r="16"/></clipPath></defs><circle cx="20" cy="20" r="16" fill="var(--moon)"/><g clip-path="url(#m72661)"><circle class="umbra" cx="49.60" cy="20" r="20.80" fill="var(--rust-shadow)"/></g></svg></td></tr>
+            <tr><th scope="row">Sunday, Oct 4</th><td>5h 42m</td><td>2h 18m</td><td><svg class="night-moon" viewBox="0 0 40 40" role="img" aria-label="2h 18m owed of 8 hours"><defs><clipPath id="m536169"><circle cx="20" cy="20" r="16"/></clipPath></defs><circle cx="20" cy="20" r="16" fill="var(--moon)"/><g clip-path="url(#m536169)"><circle class="umbra" cx="47.60" cy="20" r="20.80" fill="var(--rust-shadow)"/></g></svg></td></tr>
+            <tr><th scope="row">Saturday, Oct 3</th><td>6h 54m</td><td>1h 6m</td><td><svg class="night-moon" viewBox="0 0 40 40" role="img" aria-label="1h 6m owed of 8 hours"><defs><clipPath id="m365826"><circle cx="20" cy="20" r="16"/></clipPath></defs><circle cx="20" cy="20" r="16" fill="var(--moon)"/><g clip-path="url(#m365826)"><circle class="umbra" cx="52.40" cy="20" r="20.80" fill="var(--rust-shadow)"/></g></svg></td></tr>
+            <tr><th scope="row">Friday, Oct 2</th><td>6h 24m</td><td>1h 36m</td><td><svg class="night-moon" viewBox="0 0 40 40" role="img" aria-label="1h 36m owed of 8 hours"><defs><clipPath id="m58198"><circle cx="20" cy="20" r="16"/></clipPath></defs><circle cx="20" cy="20" r="16" fill="var(--moon)"/><g clip-path="url(#m58198)"><circle class="umbra" cx="50.40" cy="20" r="20.80" fill="var(--rust-shadow)"/></g></svg></td></tr>
+            <tr><th scope="row">Thursday, Oct 1</th><td>6h</td><td>2h</td><td><svg class="night-moon" viewBox="0 0 40 40" role="img" aria-label="2h owed of 8 hours"><defs><clipPath id="m507685"><circle cx="20" cy="20" r="16"/></clipPath></defs><circle cx="20" cy="20" r="16" fill="var(--moon)"/><g clip-path="url(#m507685)"><circle class="umbra" cx="48.80" cy="20" r="20.80" fill="var(--rust-shadow)"/></g></svg></td></tr>
+        </tbody>
+      </table>
+    </figure>
+  </section>
 
-      <h3 style="font-size: 22px; margin: 36px 0 10px;">Your sleep, read back to you</h3>
-      <p style="font-family: var(--sans); font-size: 16px; line-height: 1.7; color: var(--ink-soft); margin: 0;">
-        Every two weeks, Eclipsed writes you a short reflection about your recent
+  <section class="stages" aria-labelledby="stages-title">
+    <h2 id="stages-title">Five stages, one glance</h2>
+    <p class="stages-lede">
+      The color tells the story before you read the number. Slate when
+      you're rested. Crimson when you've been carrying it for weeks.
+    </p>
+    <ol class="stage-list" id="stage-list">
+          <li style="--i:0"><svg viewBox="0 0 100 100" aria-hidden="true"><defs><clipPath id="st0"><circle cx="50" cy="50" r="44"/></clipPath></defs><circle cx="50" cy="50" r="44" fill="var(--moon)"/><g clip-path="url(#st0)"><circle class="umbra" style="--travel:4.0px" cx="149.00" cy="50" r="55.00" fill="var(--slate)"/></g></svg><p class="stage-name">Slate</p><p class="stage-note">Rested</p></li>
+          <li style="--i:1"><svg viewBox="0 0 100 100" aria-hidden="true"><defs><clipPath id="st1"><circle cx="50" cy="50" r="44"/></clipPath></defs><circle cx="50" cy="50" r="44" fill="var(--moon)"/><g clip-path="url(#st1)"><circle class="umbra" style="--travel:28.6px" cx="124.36" cy="50" r="55.00" fill="var(--mist)"/></g></svg><p class="stage-name">Mist</p></li>
+          <li style="--i:2"><svg viewBox="0 0 100 100" aria-hidden="true"><defs><clipPath id="st2"><circle cx="50" cy="50" r="44"/></clipPath></defs><circle cx="50" cy="50" r="44" fill="var(--moon)"/><g clip-path="url(#st2)"><circle class="umbra" style="--travel:49.8px" cx="103.24" cy="50" r="55.00" fill="var(--plum)"/></g></svg><p class="stage-name">Plum</p></li>
+          <li style="--i:3"><svg viewBox="0 0 100 100" aria-hidden="true"><defs><clipPath id="st3"><circle cx="50" cy="50" r="44"/></clipPath></defs><circle cx="50" cy="50" r="44" fill="var(--moon)"/><g clip-path="url(#st3)"><circle class="umbra" style="--travel:70.9px" cx="82.12" cy="50" r="55.00" fill="var(--rust)"/></g></svg><p class="stage-name">Rust</p><p class="stage-note">Where 19h 54m sits</p></li>
+          <li style="--i:4"><svg viewBox="0 0 100 100" aria-hidden="true"><defs><clipPath id="st4"><circle cx="50" cy="50" r="44"/></clipPath></defs><circle cx="50" cy="50" r="44" fill="var(--moon)"/><g clip-path="url(#st4)"><circle class="umbra" style="--travel:103.0px" cx="50.00" cy="50" r="46.00" fill="var(--crimson)"/></g></svg><p class="stage-name">Crimson</p><p class="stage-note">Carrying it for weeks</p></li>
+    </ol>
+  </section>
+
+  <section class="places" aria-labelledby="places-title">
+    <h2 id="places-title">Wherever you look last thing at night</h2>
+    <div class="places-grid">
+      <figure class="place place--phone">
+        <img src="/screenshots/tonight.png" alt="Tonight in Eclipsed: 19h 54m owed over the past 14 days, with a strip of the past 14 nights below." width="1320" height="2868" loading="lazy">
+        <figcaption>Tonight, with a strip of the past 14 nights below the number.</figcaption>
+      </figure>
+      <figure class="place place--phone">
+        <img src="/screenshots/history.png" alt="History in Eclipsed: each night with hours slept against an 8 hour target and the amount owed." width="1320" height="2868" loading="lazy">
+        <figcaption>History, thirty days of detail.</figcaption>
+      </figure>
+      <figure class="place place--phone">
+        <img src="/screenshots/lockscreen.png" alt="An iPhone Lock Screen showing 19h 54m owed under the date and in a widget." width="720" height="1482" loading="lazy">
+        <figcaption>On the Lock Screen, without unlocking. New in 2.1.</figcaption>
+      </figure>
+      <figure class="place place--phone">
+        <img src="/screenshots/widget.png" alt="A Home Screen with the Eclipsed widget showing 19h 54m over 14 days." width="1320" height="2868" loading="lazy">
+        <figcaption>Small and medium Home Screen widgets.</figcaption>
+      </figure>
+      <figure class="place place--wide">
+        <img src="/screenshots/standby.png" alt="StandBy on a nightstand: a clock beside the Eclipsed widget showing 68h 30m over 30 days." width="1200" height="572" loading="lazy">
+        <figcaption>On the nightstand in StandBy, dimming with the room. New in 2.1.</figcaption>
+      </figure>
+      <div class="place place--text">
+        <h3>On your wrist</h3>
+        <p>
+          The Apple Watch app shows tonight's number and your past 14 nights.
+          Four complication styles keep it on your watch face all day.
+        </p>
+        <h3>Ask Siri</h3>
+        <p>
+          Ask how much sleep you owe, or use the number in a Shortcut. New in
+          2.1.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="reflect" aria-labelledby="reflect-title">
+    <div class="reflect-copy">
+      <h2 id="reflect-title">Your sleep, read back to you</h2>
+      <p>
+        Every two weeks, Eclipsed writes a short reflection about your recent
         nights. Not a chart and not a score. A few honest sentences, composed
         entirely on your device and shown to no one but you. Requires a device
         with Apple Intelligence.
       </p>
+    </div>
+    <img class="device" src="/screenshots/duo-reflection.png" alt="A reflection in Eclipsed: Sleep averages 6.3 across recent nights, written on device for September 15 to 28." width="1600" height="1077" loading="lazy">
+  </section>
 
-      <h3 style="font-size: 22px; margin: 36px 0 10px;">Everywhere you are</h3>
-      <p style="font-family: var(--sans); font-size: 16px; line-height: 1.7; color: var(--ink-soft); margin: 0;">
-        Your history now follows you between devices through your own private
-        iCloud database. Nothing leaves your iCloud, and nothing is shared with
-        anyone.
+  <section class="unfold" aria-labelledby="unfold-title">
+    <img class="device" src="/screenshots/duo-tonight.png" alt="Eclipsed on the unfolded iPhone Duo: 19h 54m owed with the past 14 nights on the left, recent nights listed on the right." width="1600" height="1125" loading="lazy">
+    <div class="unfold-copy">
+      <h2 id="unfold-title">Unfold for the whole picture</h2>
+      <p>
+        On iPhone Duo, the inner display shows tonight's number with your
+        recent nights beside it. New in 2.1.
       </p>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============================================================ -->
-<!-- ALSO                                                          -->
-<!-- ============================================================ -->
-<section class="also">
-  <div class="section-inner">
-    <h2 class="fade-in">Also</h2>
-
-    <div class="also-grid">
-      <figure class="fade-in">
-        <div class="screenshot screenshot-tonight" aria-hidden="true"></div>
-        <figcaption>
-          <h3>A 14-day strip</h3>
-          <p>Below tonight's headline, the past two weeks at a glance. One chip per night, dimmed for nights without data.</p>
-        </figcaption>
-      </figure>
-
-      <figure class="fade-in">
-        <div class="screenshot screenshot-history" aria-hidden="true"></div>
-        <figcaption>
-          <h3>The receipts</h3>
-          <p>Thirty days of detail. How long you slept, what you owed, where the data came from.</p>
-        </figcaption>
-      </figure>
-
-      <figure class="fade-in">
-        <div class="screenshot screenshot-widget" aria-hidden="true"></div>
-        <figcaption>
-          <h3>On your home screen</h3>
-          <p>Small and medium widgets carry the gradient where you'll actually see it.</p>
-        </figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================ -->
-<!-- PRIVACY                                                       -->
-<!-- ============================================================ -->
-<section class="privacy">
-  <div class="section-inner">
-    <h2 class="fade-in">What stays yours</h2>
-    <p class="privacy-line fade-in">Everything.</p>
-    <p class="privacy-detail fade-in">
-      No accounts. No analytics on you. Sleep data is read from HealthKit and
-      stored on your device. If you use iCloud sync, your history moves between
-      your devices through your own private iCloud database, encrypted and
-      unreadable by anyone else. Including us.
+  <section class="yours" aria-labelledby="yours-title">
+    <h2 id="yours-title">What stays yours</h2>
+    <p class="yours-line">Everything.</p>
+    <p>
+      No accounts. No analytics on you. Sleep data is read from Health and
+      stored on your device. If you use iCloud sync, your history moves
+      between your devices through your own private iCloud database,
+      encrypted and unreadable by anyone else, including us.
     </p>
-  </div>
-</section>
-
-<!-- ============================================================ -->
-<!-- MADE BY                                                       -->
-<!-- ============================================================ -->
-<section class="madeby" style="padding: clamp(80px, 12vh, 140px) 0; border-bottom: 1px solid var(--rule);">
-  <div class="section-inner">
-    <h2 class="fade-in">Made by</h2>
-    <p class="fade-in" style="font-family: var(--sans); font-size: 16px; line-height: 1.7; color: var(--ink-soft); max-width: 640px; margin: 0 0 12px;">
-      Eclipsed is designed, built, and supported by one person, Kurt Klein, in Berwyn, Pennsylvania, under <a href="https://ksqstudios.com" style="color: var(--ink); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px;">KSQ Studios</a>.
+    <p class="buy">
+      <a class="button" href="https://apps.apple.com/us/app/eclipsed/id6764891875" rel="noopener">Download on the App Store</a>
     </p>
-    <p class="fade-in" style="font-family: var(--sans); font-size: 14px; line-height: 1.7; color: var(--ink-faint); max-width: 640px; margin: 0;">
-      If you've used it and want to say hello, report a bug, or suggest something: <a href="mailto:techsupport@ksqstudios.com" style="color: var(--ink-faint); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px;">techsupport@ksqstudios.com</a>.
-    </p>
-  </div>
-</section>
+  </section>
 
-<!-- ============================================================ -->
-<!-- FOOTER                                                        -->
-<!-- ============================================================ -->
-<footer>
-  <div class="section-inner footer-inner">
-    <div class="footer-brand">
-      <span class="footer-logo" aria-hidden="true"></span>
-      <span>Eclipsed</span>
-    </div>
+</main>
 
-    <nav class="footer-nav">
+<footer class="foot">
+  <div class="foot-inner">
+    <nav aria-label="Footer">
       <a href="/privacy">Privacy</a>
       <a href="/support">Support</a>
-      <a href="https://github.com/ksqstudios/eclipsed-site">Site source</a>
-      <a href="mailto:techsupport@ksqstudios.com">Email</a>
+      <a href="mailto:techsupport@ksqstudios.com">techsupport@ksqstudios.com</a>
+      <a href="https://ksqstudios.com">KSQ Studios</a>
     </nav>
-
-    <p class="footer-fine">
-      &copy; <span id="year">2026</span> KSQ Studios LLC · Eclipsed. Made in Pennsylvania.
-    </p>
+    <p>Eclipsed is designed, built, and supported by one person, Kurt Klein, in Berwyn, Pennsylvania, under KSQ Studios. 2026.</p>
   </div>
 </footer>
 
 <script>
-  // Year in footer
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Scroll fade-in. Adds .is-visible to .fade-in elements once they
-  // enter the viewport, then unobserves them. Single observer, low cost.
+  // The night deepens as you read: the page's sky moves from blue-black
+  // toward crimson-black with scroll, the way the debt accumulates.
   (function () {
-    const els = document.querySelectorAll('.fade-in');
-    if (!('IntersectionObserver' in window) || els.length === 0) {
-      // Old browser or nothing to fade, show everything immediately.
-      els.forEach(el => el.classList.add('is-visible'));
-      return;
+    var top = [18, 23, 38], bottom = [30, 13, 19];
+    var root = document.documentElement;
+    function sky() {
+      var max = document.documentElement.scrollHeight - innerHeight;
+      var t = max > 0 ? Math.min(1, scrollY / max) : 0;
+      var c = top.map(function (v, i) { return Math.round(v + (bottom[i] - v) * t); });
+      root.style.setProperty('--sky', 'rgb(' + c + ')');
     }
+    addEventListener('scroll', sky, { passive: true });
+    addEventListener('resize', sky);
+    sky();
 
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          io.unobserve(entry.target);
-        }
-      });
-    }, {
-      rootMargin: '0px 0px -10% 0px',
-      threshold: 0.05
-    });
-
-    els.forEach(el => io.observe(el));
+    // The stages eclipse in sequence when they come into view.
+    var list = document.getElementById('stage-list');
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+      list.classList.add('is-waiting');
+      var io = new IntersectionObserver(function (e) {
+        if (e[0].isIntersecting) { io.disconnect(); list.classList.remove('is-waiting'); list.classList.add('is-turning'); }
+      }, { threshold: 0.5 });
+      io.observe(list);
+    }
   })();
 </script>
 

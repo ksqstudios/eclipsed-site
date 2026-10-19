@@ -1,13 +1,14 @@
 # eclipsed-site
 
-Marketing site for [Eclipsed](https://eclipsedsleep.com), a sleep debt utility for iOS.
+Marketing site for [Eclipsed](https://eclipsedsleep.app), a sleep debt utility for iOS.
 
 ## Stack
 
 - Static HTML/CSS, no build step
 - Hosted on Cloudflare Pages (auto-deploy from `main`)
-- Plausible Analytics (privacy-friendly, no cookies)
-- Custom domain: `eclipsedsleep.com`
+- No analytics of any kind
+- EB Garamond from Google Fonts, the only typeface
+- Custom domains: `eclipsedsleep.app` (canonical) and `eclipsedsleep.com`
 
 ## Local preview
 
@@ -21,15 +22,15 @@ Then visit http://localhost:8000.
 
 ## Pages
 
-- `/` — `index.html`, marketing landing
-- `/privacy` — `privacy.html`, App Store-required privacy policy
-- `/support` — `support.html`, FAQ + email contact
+- `/`, `index.html`, marketing landing
+- `/privacy`, `privacy.html`, App Store-required privacy policy
+- `/support`, `support.html`, FAQ + email contact
 
 ## Assets
 
-- `favicon.svg` — small crescent on Vigil gradient
-- `apple-touch-icon.png` — 180x180 app-icon-style
-- `og.png` — 1200x630 social share card
+- `favicon.svg`, small crescent on Vigil gradient
+- `apple-touch-icon.png`, 180x180 app-icon-style
+- `og.png`, 1200x630 social share card
 
 ## Design tokens
 

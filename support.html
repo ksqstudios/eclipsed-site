@@ -3,81 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#3A5878">
-  <title>Support — Eclipsed</title>
+  <meta name="theme-color" content="#121726">
+  <title>Support, Eclipsed</title>
   <meta name="description" content="Help and support for Eclipsed.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://eclipsedsleep.app/support">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
-  <style>
-    .doc {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: clamp(60px, 10vh, 120px) var(--gutter);
-    }
-    .doc h1 {
-      font-size: clamp(32px, 4vw, 44px);
-      margin-bottom: 8px;
-    }
-    .doc .lead {
-      color: var(--ink-soft);
-      font-size: 17px;
-      line-height: 1.6;
-      margin-bottom: 40px;
-    }
-    .doc h2 {
-      font-size: 22px;
-      margin: 40px 0 12px;
-    }
-    .doc h3 {
-      font-size: 17px;
-      margin: 24px 0 8px;
-      color: var(--ink);
-    }
-    .doc p, .doc li {
-      color: var(--ink-soft);
-      line-height: 1.7;
-    }
-    .doc ul, .doc ol {
-      padding-left: 22px;
-    }
-    .contact-card {
-      background: var(--parchment-2);
-      border-radius: 14px;
-      padding: 28px;
-      margin: 48px 0 0;
-      text-align: center;
-    }
-    .contact-card h2 {
-      margin: 0 0 8px;
-    }
-    .contact-card p {
-      margin: 0 0 16px;
-    }
-    .contact-card a {
-      display: inline-block;
-      background: var(--slate-top);
-      color: white;
-      padding: 12px 24px;
-      border-radius: 12px;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 15px;
-    }
-    .home-link {
-      display: inline-block;
-      margin-bottom: 24px;
-      font-size: 14px;
-      color: var(--ink-faint);
-      text-decoration: none;
-    }
-    .home-link:hover { color: var(--ink); }
-  </style>
 </head>
 <body>
 
-<div class="doc">
-  <a class="home-link" href="/">&larr; Back to Eclipsed</a>
+<header class="bar">
+  <div class="bar-inner">
+    <a class="mark" href="/">
+      <img src="/favicon.svg" alt="" width="28" height="28">
+      Eclipsed
+    </a>
+    <nav aria-label="Site">
+      <a href="/support">Support</a>
+      <a class="bar-cta" href="https://apps.apple.com/us/app/eclipsed/id6764891875" rel="noopener">Get Eclipsed</a>
+    </nav>
+  </div>
+</header>
+
+<main class="doc">
 
   <h1>Support</h1>
   <p class="lead">
@@ -210,8 +161,19 @@
     <p>I read every email and respond personally.</p>
     <a href="mailto:techsupport@ksqstudios.com">techsupport@ksqstudios.com</a>
   </div>
-</div>
+</main>
 
+<footer class="foot">
+  <div class="foot-inner">
+    <nav aria-label="Footer">
+      <a href="/privacy">Privacy</a>
+      <a href="/support">Support</a>
+      <a href="mailto:techsupport@ksqstudios.com">techsupport@ksqstudios.com</a>
+      <a href="https://ksqstudios.com">KSQ Studios</a>
+    </nav>
+    <p>Eclipsed is designed, built, and supported by one person, Kurt Klein, in Berwyn, Pennsylvania, under KSQ Studios. 2026.</p>
+  </div>
+</footer>
 
 </body>
 </html>
